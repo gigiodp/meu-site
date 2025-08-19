@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Quiz sobre a gigio </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um quiz para conhecer a Gio!">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programação e veja quantos pontos você ganha!</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> tem como principal fundamento testar seu nível de amor por mim, <br>abordando
+                assuntos sobre a <em>minha pessoa</em>.
+            </p>
+        </section>
+        <!--Pergunta 1: Múltipla Escolha-->
+        <section>
+            <h2>Pergunta 1: Qual meu personagem preferido de <abbr title="Hello Kitty">HK</abbr>?</h2>
+            <form>
+                <input type="radio" value="My Melody" id="p1a" name="pergunta 1">
+                    <label for="p1a">My Melody</label><br>
+                <input type="radio" value="Kuromi" id="p1b" name="pergunta 1">
+                    <label for="p1b">Kuromi</label><br>
+                <input type="radio" value="Hello Kitty" id="p1c" name="pergunta 1">
+                    <label for="p1c">Hello Kitty</label><br>
+                <input type="radio" value="Keroppi" id="p1d" name="pergunta 1">
+                    <label for="p1d">Keroppi</label><br>
+                <input type="radio" value="Badtz Maru" id="p1e" name="pergunta 1">
+                    <label for="p1e">Badtz Maru</label><br>
+            </form>
+        </section>
+        <!--Pergunta 2: Texto-->
+        <section>
+            <h2>Pergunta 2: Meu streamer favorito é _____</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta 2" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+        <!--Pergunta: Senha
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta 3" placeholder="Digite uma senha...">
+            </form>
+        </section>-->
+        <!--Pergunta 3: Data-->
+        <section>
+            <h2>Pergunta 3: Qual minha data de nascimento?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta 4">
+            </form>
+        </section>
+        <!--Pergunta 4: Seleção Múltipla-->
+        <section>
+            <h2>Pergunta 4: Quais minhas comidas favoritas?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta 5" value="sushi">
+                    <label for="p5a">Sushi</label>
+                <input type="checkbox" id="p5b" name="pergunta 5" value="macarrao">
+                    <label for="p5b">Macarrão de molho branco</label>
+                <input type="checkbox" id="p5c" name="pergunta 5" value="estrogonofe">
+                    <label for="p5c">Estrogonofe</label>
+            </form>
+        </section>
+        <!--Pergunta: Upload de Arquivo
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTMl</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta 6">
+            </form>
+        </section>-->
+        <!--Pergunta 5: Menu Suspenso-->
+        <section>
+            <h2>Pergunta 5: Selecione minha cor favorita</h2>
+            <form>
+                <select name="pergunta 7" id="p7">
+                    <option value="vermelho">Vermelho</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="preto">Preto</option>
+                    <option value="azul">azul</option>
+                </select>
+            </form>
+        </section>
+        <!--Pergunta 6: Upload de Imagem-->
+        <section>
+            <h2>Pergunta 6: Qual o nome dessa diva?</h2>
+            <figure> <img src="dalila et.jpg" alt="Cachorrinha et pug" width="300"><br>
+                <figcaption>Figura 1: Cachorrinha ET</figcaption>
+            </figure> <!--Foi usado figure mais pra aprender mesmo, mas só o img ja faz o trabalho-->
+            <input type="text" id="p8" name="pergunta 8" placeholder="Digite sua resposta...">
+        </section>
+        <!--Tabela de pontuação-->
+        <section>
+            <h2>Tabela de pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-1</td>
+                        <td>Desista! Você é uma péssima amizade!</td>
+                    </tr>
+                    <tr>
+                        <td>2-3</td>
+                        <td>Você ainda precisa melhorar. Tô decepcionada.</td>
+                    </tr>
+                    <tr>
+                        <td>4-5</td>
+                        <td>Bom! Seu conhecimento sobre mim tá ok. Me paga um sushi que te conto mais sobre mim.</td>
+                    </tr>
+                    <tr>
+                        <td>6-7</td>
+                        <td>Perfeito! Você me ama de verdade!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima! :)</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de respostas-->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para verificar as respostas</summary>
+            <ol> <!--Listas numeradas, "ul" listas não numeradas-->
+                <li>My Melody</li>
+                <li>Alanzoka</li>
+                <li>08/12/2004</li>
+                <li>Sushi, macarrão de molho branco</li>
+                <li>Vermelho</li>
+                <li>Dalila</li>
+            </ol>
+        </details>
+        </section>
+        <!--Formulário de Feedback-->
+        <section>
+            <h2>Me manda suas informações pra eu te denunciar!</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                <label for="comentario">Comentários:</label>
+                    <br><textarea name="comentario" id="comentario" rows="4" cols="50" placeholder="Comente aqui"></textarea>
+                    </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Quiz sobre Gigi. Todos os direitos reservados. &copy;</p>
+        <p>Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a></p>
+    </footer>
+</body>
+
+
+</html>
